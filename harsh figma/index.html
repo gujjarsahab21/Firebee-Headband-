@@ -1,0 +1,156 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firebee Headband</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <img src="./Black Friday Sale - Save $100.png" alt="">
+            </div>
+            <div class="header-main">
+                <div class="logo">
+                    <img src="./Frame 3.png" alt="Firebee Logo">
+                </div>
+                <nav id="navbar" class="nav-active">
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Signals</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header-action">
+                    <button class="buy-now">Buy Now</button>
+                    <div class="hamburger-menu">
+                        &#9776; 
+                    </div>
+                    <div class="user-icon">
+                        <img src="user.png" alt="User Icon">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="left-side">
+                <div class="certifications">
+                    <img src="./image 165.png" alt="FCC Certification" class="cert-img">
+                    <img src="./Subtract (1).png" alt="ICNIRP Certification" class="cert-img">
+                </div>  
+            
+                <div class="product-page">
+                    <div class="product-image">
+                        <img id="main-image" src="./product with ligh 1.png" alt="Product Image">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img class="carousel-slide thumbnail" src="Rectangle 27.png" alt="Thumbnail 1" onclick="changeImage('./product with ligh 1.png')" onmouseover="changeImage('./product with ligh 1.png')" onmouseleave="changeImage('./product with ligh 1.png')">
+                        <img class="carousel-slide thumbnail" src="Rectangle 616.png" alt="Thumbnail 2" onclick="changeImage('./DSC08354_Opt2 2.jpg')" onmouseover="changeImage('./DSC08354_Opt2 2.jpg')">
+                        <img class="carousel-slide thumbnail" src="Rectangle 615.png" alt="Thumbnail 3" onclick="changeImage('./DSC08354_Opt2 1.jpg')" onmouseover="changeImage('./DSC08354_Opt2 1.jpg')">
+                        <img class="carousel-slide thumbnail" src="Rectangle 618.png" alt="Thumbnail 4" onclick="changeImage('./SPENCER-00269 1.jpg')" onmouseover="changeImage('./SPENCER-00269 1.jpg')">
+                        <img class="carousel-slide thumbnail" src="Rectangle 617.png" alt="Thumbnail 5" onclick="changeImage('./_DP_1563 1.jpg')" onmouseover="changeImage('./_DP_1563 1.jpg')">
+                    </div>
+                </div>
+                <div class="additional-info mobile-move">
+                    <div class="info-item">
+                        <img src="./Group 796.png" alt="Icon 1">
+                        <span>30-day Money-back
+                            Guarantee</span>
+                    </div>
+                    <div class="info-item">
+                        <img src="./Vector.svg" alt="Icon 2">
+                        <span>Free Shipping within USA</span>
+                    </div>
+                    <div class="info-item">
+                        <img src="./Union.svg" alt="Icon 3">
+                        <span>Signal Catalogue Updates Included</span>
+                    </div>
+                    <div class="info-item">
+                        <img src="./Vector (1).svg" alt="Icon 4">
+                        <span>Customer Support via E-mail, Phone, and Chat</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h1 class="heading">Firebee Headband</h1>
+                <p class="rating">★&nbsp;★&nbsp;★&nbsp;★&nbsp;☆ <span class="reviews">267 Reviews</span></p>
+                <p class="small-heading">Order today and receive your Firebee by June 15th, 2021</p>
+
+                <!-- Kit Switch Button -->
+                <div class="kit-switch">
+                    <button id="switch-kit-btn">Switch to Founder’s Kit</button>
+                </div>
+
+                <!-- Starter Kit -->
+                <div id="starter-kit" class="kit">
+                    <div class="product-details">
+                        <div class="product-price">
+                            <div class="product-heading">
+                                <h2>Firebee Starter Kit</h2>
+                                <span class="price"><s>$999.00</s> &nbsp; $379.00</span>
+                            </div>
+                            <div class="most-popular-kit">MOST POPULAR KIT</div>
+                            <ul>
+                                <li><img src="./Group 924.png" alt="Checkmark" class="checkmark"> Access to 7 signals (and future signal releases)</li>
+                                <li><img src="./Group 924.png" alt="Checkmark" class="checkmark"> Firebee Headband</li>
+                                <li><img src="./Group 924.png" alt="Checkmark" class="checkmark"> $19/month membership, first 2 months free</li>
+                            </ul>
+                            <p class="details">The starter kit is the most affordable way to get started with Firebee. Pay $299 for the Firebee headband and access to the entire Firebee Signal Catalogue for only $19 a month. <strong>Membership can be cancelled anytime. No contracts. Satisfaction guaranteed.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder's Kit -->
+                <div id="founders-kit" class="kit founder" style="display:none;">
+                    <div class="founders-kit">
+                        <div class="product-heading">
+                            <h2>Founder's Kit</h2>
+                            <span class="price">$799.00</span>
+                        </div>
+                        <ul>
+                            <li><img src="./Group 924.png" alt="Checkmark" class="checkmark"> Access to 7 signals (and future signal releases)</li>
+                            <li><img src="./Group 924.png" alt="Checkmark" class="checkmark"> Firebee Headband</li>
+                            <li><img src="./Group 924.png" alt="Checkmark" class="checkmark"> No Monthly Membership</li>    
+                        </ul>
+                        <p class="details">The Founders kit allows you to get the Firebee headband and lifetime access to the entire Firebee Signal Catalogue for a one-time payment. The founders kit can be paid through Affirm allowing customers to make small payments of $73 a month.</p>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="purchase-btn"> 
+                        <img src="./Union (1).svg" alt="">
+                    </button>
+                </div>
+
+                <div class="payment-options">
+                    <img src="./image 157.png" alt="Visa">
+                    <img src="./image 158.png" alt="Mastercard">
+                    <img src="./image 159.png" alt="American Express">
+                    <img src="./image 160.png" alt="PayPal">
+                    <img src="./image 161.png" alt="">
+                    <img src="./image 162.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="guarantee">
+            <div class="guarantee-content">
+                <div class="guarantee-image">
+                    <img src="./image 164.png" alt="Money Back Guarantee">
+                </div>
+                <div class="guarantee-text">
+                    <h3>30 Day Money Back Guarantee</h3>
+                    <p>At Firebee we believe in building quality products that actually work. Firebee and its partners have invested over $85 million in research and development to create the highest quality wearable for customers to enjoy. If for any reason you are not satisfied with your Firebee headband we will happily refund your purchase.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,244 @@
+/* Existing Responsive Styles */
+
+/* Mobile First Approach */
+@media (max-width: 768px) {
+    /* Ensure content layout */
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    /* Hide the additional-info section on mobile screens */
+    .additional-info {
+        display: none; /* Hide the additional-info section on mobile screens */
+    }
+
+    /* Ensure payment options come before additional-info on mobile */
+    .payment-options {
+        order: 1; /* Payment options should be above additional-info */
+        margin-bottom: 20px; /* Add space below payment options */
+    }
+
+    .additional-info {
+        order: 2; /* Move additional-info below payment options */
+        margin-top: 20px; /* Add space above additional-info section */
+    }
+
+    /* Guarantee Section - Mobile View */
+    .guarantee {
+        text-align: center; /* Center the text inside the guarantee section */
+        margin: 0 auto; /* Center the guarantee section itself */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .guarantee-content {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .guarantee-image {
+        order: 1; /* Guarantee image comes first */
+        margin-bottom: 10px; /* Add space below the image */
+        margin-right: 30px;
+        max-width: 100%;
+    }
+
+    .guarantee-text {
+        order: 2; /* Guarantee text comes after the image */
+        margin-top: 10px; /* Add some space between image and text */
+    }
+
+    .guarantee-text h3 {
+        font-size: 50px; /* Adjust text size for mobile */
+        text-align: center;
+
+    }
+
+    .guarantee-text p {
+        font-size: 34px; /* Adjust text size for mobile */
+        text-align: center;
+    }
+    .payment-options {
+        order: 1; /* Payment options should be above additional-info */
+        margin-bottom: 20px; /* Add space below payment options */
+        width: 100%; /* Full width */
+        display: flex;
+        flex-wrap: wrap; /* Wrap images if needed */
+        justify-content: center; /* Center the images */
+    }
+
+    .payment-options img {
+        width: auto; /* Auto width to maintain aspect ratio */
+        max-width: 70px; /* Adjust size as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px; /* Space between images */
+    }
+    .actions {
+        width: 100%; /* Full width */
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 15px; /* Add some horizontal padding */
+    }
+
+    .purchase-btn {
+        background-color: #00cc00; /* Button background color */
+        color: white; /* Button text color */
+        padding: 29px 4px; /* Adjust padding for larger button */
+        border: none; /* Remove border */
+        border-radius: 40px; /* Rounded corners */
+        cursor: pointer;
+        font-size: 18px; /* Larger font size */
+        width: 100%; /* Full width */
+        max-width: 600px; /* Max width to ensure it's not too wide */
+        margin: 0 auto; /* Center align */
+        transform: none; /* Remove transform if applied */
+    }
+    #starter-kit {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content horizontally */
+        width: 75%;
+        padding: 15px; /* Add padding around the container */
+        margin-left: 90px;
+    }
+
+    .product-details {
+        width: 100%; /* Full width of the container */
+        max-width: 600px; /* Optional: limit the maximum width */
+    }
+
+    /* Ensure each section takes a new line and is centered */
+    .product-heading,
+    .most-popular-kit,
+    .product-details ul,
+    .details {
+        text-align: left; /* Center text */
+        margin-bottom: 20px; /* Space between sections */
+    }
+
+    .product-heading {
+        display: block; /* Ensure it takes a new line */
+    }
+
+    .product-heading h2 {
+        font-size: 40px; /* Adjust font size for mobile */
+        margin: 0; /* Remove default margin */
+    }
+
+    .product-price .price {
+        display: block; /* Ensure it takes a new line below the heading */
+        font-size: 30px; /* Adjust font size for mobile */
+        margin: 10px 0; /* Margin around the price */
+        font-weight: 300;
+    }
+
+    .most-popular-kit {
+        font-size: 15px; /* Adjust font size for mobile */
+        margin: 10px 0; /* Margin around the "Most Popular Kit" text */
+        text-align: center;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .product-details ul {
+        list-style: none; /* Remove default list styles */
+        padding: 0; /* Remove padding */
+        margin: 20px 0; /* Margin above and below the list */
+       
+    }
+
+    .product-details ul li {
+        display: flex;
+        align-items: center; /* Align items vertically center */
+        font-size: 25px; /* Adjust font size for mobile */
+        margin-bottom: 10px; /* Space between list items */
+        
+    }
+
+    .product-details ul li img.checkmark {
+        width: 25px; /* Adjust size of the checkmark */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 100px; /* Space between checkmark and text */
+       
+    }
+
+    .details {
+        font-size: 20px; /* Adjust font size for mobile */
+        text-align: left; /* Center the paragraph text */
+        margin-top: 20px; /* Margin above the paragraph */
+    }
+    
+
+#founders-kit {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    width: 75%;
+    padding: 15px; /* Add padding around the container */
+    margin-left: 90px;
+}
+.product-heading .price {
+    display: block; /* Ensure it takes a new line below the heading */
+    font-size: 30px; /* Adjust font size for mobile */
+    margin: 10px 0; /* Margin around the price */
+    font-weight: 300;
+}
+.founders-kit ul li{  
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    font-size: 25px; /* Adjust font size for mobile */
+    margin-bottom: 10px; /* Space between list items */
+    font-weight: 100;
+    line-height: 1;
+}
+.founders-kit ul li img.checkmark {
+    width: 25px; /* Adjust size of the checkmark */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 100px; /* Space between checkmark and text */  
+}
+.founders-kit .details{
+    font-size: 20px; /* Adjust font size for mobile */
+    text-align: left; /* Center the paragraph text */
+    margin-top: 20px; /* Margin above the paragraph */
+    line-height: 1.4;
+}
+.small-heading{
+    font-size: 35px;
+    text-align: center;
+}
+.rating{
+    text-align: center;
+    font-size: 40px;
+}
+.reviews{
+    font-size: 30px;
+    font-weight: 500;
+}
+.right-side .heading{
+    font-size: 60px;
+    text-align: center;
+}
+#switch-kit-btn{
+    padding: 15px;
+    border-radius: 60px;
+}
+nav {
+    display: none; /* Hide the additional-info section on mobile screens */
+}
+.user-icon{
+    display: none;
+}
+.header-main{
+    padding: 30px;
+}
+.hamburger-menu {
+    display: block; /*how hamburger menu on mobile*/
+}
+}
